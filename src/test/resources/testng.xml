@@ -1,0 +1,16 @@
+<!--
+ Este configurador ejecuta test de distintas clases correctamente
+-->
+
+<suite name="SuitePrincipal" parallel="none">
+
+    <test name="SuiteConsulta">
+        <classes>
+            <class name="ApiRestAssuredTests">
+                <methods>
+                    <include name="deberiaListarUsuariosExitosamente"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
